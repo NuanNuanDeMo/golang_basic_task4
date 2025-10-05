@@ -1,0 +1,321 @@
+{
+	"info": {
+		"_postman_id": "f484feb9-c2e1-4681-8dab-2f2cc0898fcc",
+		"name": "任务4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "文章新增",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVaWQiOjEsInVzZXJuYW1lIjoi5byg5p2wIiwiZXhwIjoxNzU5NzMxNDc0LCJuYmYiOjE3NTk2NDUwNzQsImlhdCI6MTc1OTY0NTA3NH0.X6YtBp2o4VpePJLNwHWxmy390qCzXDVoDGcd2qfqtzk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Title\":\"这是标题5\",\r\n    \"Content\":\"标题5文章的内容11111111\",\r\n    \"UserID\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/article/add",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"article",
+						"add"
+					],
+					"query": [
+						{
+							"key": "file",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "用户注册",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Username\":\"谢娜\",\r\n    \"Password\":\"123456\",\r\n    \"Email\":\"1448282787@qq.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/user/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "用户登录",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Username\":\"张杰\",\r\n    \"Password\":\"123456\",\r\n    \"Email\":\"1448282786@qq.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/user/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "查询单个文章",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVaWQiOjEsInVzZXJuYW1lIjoi5byg5p2wIiwiZXhwIjoxNzU5NzMxNDc0LCJuYmYiOjE3NTk2NDUwNzQsImlhdCI6MTc1OTY0NTA3NH0.X6YtBp2o4VpePJLNwHWxmy390qCzXDVoDGcd2qfqtzk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/article/query/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"article",
+						"query",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "查询文章列表",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVaWQiOjEsInVzZXJuYW1lIjoi5byg5p2wIiwiZXhwIjoxNzU5NzMxNDc0LCJuYmYiOjE3NTk2NDUwNzQsImlhdCI6MTc1OTY0NTA3NH0.X6YtBp2o4VpePJLNwHWxmy390qCzXDVoDGcd2qfqtzk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/article/queryList",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"article",
+						"queryList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "更新文章",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVaWQiOjEsInVzZXJuYW1lIjoi5byg5p2wIiwiZXhwIjoxNzU5NzMxNDc0LCJuYmYiOjE3NTk2NDUwNzQsImlhdCI6MTc1OTY0NTA3NH0.X6YtBp2o4VpePJLNwHWxmy390qCzXDVoDGcd2qfqtzk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ID\":4,\r\n    \"Title\":\"这是标题44444\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/article/edit",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"article",
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "文章删除",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVaWQiOjEsInVzZXJuYW1lIjoi5byg5p2wIiwiZXhwIjoxNzU5NzMxNDc0LCJuYmYiOjE3NTk2NDUwNzQsImlhdCI6MTc1OTY0NTA3NH0.X6YtBp2o4VpePJLNwHWxmy390qCzXDVoDGcd2qfqtzk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ID\":4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/article/delete",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"article",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "文章评论",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVaWQiOjEsInVzZXJuYW1lIjoi5byg5p2wIiwiZXhwIjoxNzU5NzMxNDc0LCJuYmYiOjE3NTk2NDUwNzQsImlhdCI6MTc1OTY0NTA3NH0.X6YtBp2o4VpePJLNwHWxmy390qCzXDVoDGcd2qfqtzk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"PostID\": 1,\r\n    \"Content\": \"文章1的评论3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/comments/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"comments",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "文章评论列表",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVaWQiOjEsInVzZXJuYW1lIjoi5byg5p2wIiwiZXhwIjoxNzU5NzMxNDc0LCJuYmYiOjE3NTk2NDUwNzQsImlhdCI6MTc1OTY0NTA3NH0.X6YtBp2o4VpePJLNwHWxmy390qCzXDVoDGcd2qfqtzk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/comments/query/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"comments",
+						"query",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
