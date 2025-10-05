@@ -1,7 +1,7 @@
 <h3>1. github上拉取代码</h3>
-   git clone https://github.com/NuanNuanDeMo/golang_base_task4.git
+   git clone https://github.com/NuanNuanDeMo/golang_basic_task4.git
 <h3>2. 进入目录</h3>
-    cd golang_base_task4
+    cd golang_basic_task4
 <h3>3. 安装依赖</h3>
     <h4>go mod tidy</h4>
     <h4>go install github.com/gravityblast/fresh@latest</h4>
